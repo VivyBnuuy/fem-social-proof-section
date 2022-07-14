@@ -7,7 +7,6 @@ The designs were created to the following widths:
 
 html {
   font-size: 17px;
-
 }
 
 /* Custom properties */
@@ -23,13 +22,6 @@ html {
 /* Desktop layout */
 body {
   margin: 0;
-  
-  height: 100vh;
-
-  background-color: var(--white);
-  background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
-  background-position: left top, right bottom;
-  background-repeat: no-repeat, no-repeat;
 
   font-family: 'League Spartan', sans-serif;
 }
@@ -41,16 +33,22 @@ body {
   height: 100vh;
 
   align-items: center;
+
+  background-color: var(--white);
+  background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .grid_container {
   display: grid;
   grid-template: 275px 275px / 555px 555px;
-
   gap: 2.95rem;
 
   justify-content: center;
   align-items: center;
+
+  padding-bottom: 1rem;
 }
 
 .main_text {
@@ -81,7 +79,7 @@ body {
 
   display: flex;
 
-  padding: 0 30px 0 30px;
+  padding: 1.14rem 1.75rem 1.14rem 1.75rem;
   border-radius: 0.5rem;
   margin-top: 1rem;
 
@@ -92,16 +90,21 @@ body {
   align-self: flex-start;
 }
 
+.review_small:nth-child(2) {
+  align-self: center;
+}
+
 .review_small:nth-child(3) {
   align-self: flex-end;
 }
 
 .stars_container {
   align-content: center;
+  margin: 0;
 }
 
 .star_img {
-  padding: 0 4px 0 4px;
+  padding: 0 0.24rem 0 0.24rem;
 }
 
 .review_small_text {
@@ -118,8 +121,6 @@ body {
   gap: 2rem;
 
   color: var(--white);
-
-  height: 100%;
 }
 
 .review_long_card {
@@ -173,3 +174,73 @@ body {
 }
 
 /* Mobile layout */
+
+@media screen and (max-width: 1240px) {
+  .wrapper {
+    height: unset;
+  }
+
+  .grid_container {
+    display: flex;
+    flex-direction: column;
+
+    justify-self: center;
+
+    gap: 1rem;
+
+    padding: 1.5rem;
+
+    max-width: 500px;
+    
+  }
+
+  .main_header {
+    font-size: 2.35rem;
+  }
+  .main_text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reviews_small_container {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    width: 100%;
+  }
+
+  .review_small:nth-child(1) {
+    align-self: auto;
+  }
+  
+  .review_small:nth-child(2) {
+    align-self: auto;
+  }
+  
+  .review_small:nth-child(3) {
+    align-self: auto;
+  }
+
+  .review_small {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem 0;
+  }
+
+  .stars_container {
+    margin-bottom: 0.5rem;
+  }
+
+  .review_small_text {
+    text-align: center;
+  }
+
+  .reviews_long_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+
+    gap: 1rem;
+  }
+}
