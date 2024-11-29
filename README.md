@@ -17,6 +17,6 @@ For this challenge, I used the following:
 - I'm not sure if it's just me, but I felt like stretching the mobile design to be wider than 500px looked odd - I feel like it should still stretch out to take more of the screen if it's available, but at the same time it ends up not looking as great and made for long lines of text instead of shorter lines that are centered on the screen.
 
 # The End
-Thanks for checking out my solution to this challenge! If you have any feedback, I would love if you reached out to me or left a comment on my <a href="https://www.frontendmentor.io/solutions/social-proof-section-solution-with-css-grid-and-flexbox-XAn0ruCXoW" target="_blank">solution page</a> - I'm always looking to improve!
+Thanks for checking out my solution to this challenge! If you have any feedback, I would love if you reached out to me or opened an issue if there's anything that needs fixing; I'm always looking to improve!
 
 Happy coding!
